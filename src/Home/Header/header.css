@@ -1,0 +1,78 @@
+.toolbar{
+    flex-wrap: wrap;
+    margin: auto;
+    /* width: 70%; */
+    height: 80px;
+} 
+
+.titleHeader {
+display: flex;
+height: 100%;
+flex-direction: column;
+justify-content: flex-end;
+}
+
+.titleHeader h2{
+    font-weight: bold;
+    color: white;
+    font-size: 2.5rem;
+    font-family: Trebuchet MS
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+}
+
+.space{
+    flex-grow: 0.6;
+}
+
+.items{
+    display: flex;
+    /* flex-direction: column;
+    justify-content: flex-end ; */
+    height: 100%;
+}
+.items ul {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    /* width: 100%; */
+}
+
+.items ul a {
+   font-weight: bold;
+   font-size: 1rem;
+   background-color: teal;
+   width: 300px;
+    color: white;
+    font-family: Open Sans,Helvetica,Arial,sans-serif;
+    padding: 15px 15px;
+    
+}
+
+.items ul img {
+    border: solid #FFFFFF 1px;
+    border-radius: 5px;
+    margin-right: 5px;
+     
+ }
+
+.items a:hover, 
+.items a:active {
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color .1s ease-out;
+    text-shadow: 0 0 2px rgba(0,0,0,0.5);
+}
+
+.titleHeader a:hover,
+.titleHeader a:active{
+    cursor: pointer;
+    text-decoration: none;
+}
+

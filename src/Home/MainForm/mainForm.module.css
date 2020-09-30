@@ -1,0 +1,173 @@
+/* mainForm */
+.mainForm{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    
+    height: 600px ;
+    margin-bottom: 2rem;
+}
+/* END mainForm */
+
+/* form left */
+
+.formLeft{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width:450px;
+    background-color: white;
+    border-radius: 0.9rem;
+    margin-right: 5%;
+}
+
+.formLeft .inputBox input{
+    width: 80%;
+    color: blue;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid blue;
+    outline: none;
+    cursor: pointer;
+    padding-top: 20px;
+}
+/* END form left */
+
+
+/* container right */
+
+.containerRight{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 450px;
+    border-radius:  1rem;
+    background-color: white;
+}
+ /* image  */
+.containerRight .pix{
+    display: flex;
+    margin-left: 30px;
+}
+ /* text  */
+
+.containerRight .text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+    /* partie prix */
+
+.containerRight .price h3 {
+    width: 70%;
+   font-size: 15px;
+   font-weight: bold;
+}
+
+.containerRight .price h4 {
+    width: 70%;
+    font-size: 10px;
+    /* font-weight: bold; */
+ }
+
+    /* END partie prix */
+
+
+    /* partie fidelite */
+
+ .containerRight .loyalty{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.containerRight .loyalty h3 {
+    width: 70%;
+   font-size: 15px;
+   font-weight: bold;
+}
+
+.containerRight .loyalty h4 {
+    width: 70%;
+    font-size: 10px;
+    /* font-weight: bold; */
+ }
+
+    /*  END partie fidelite */
+
+
+    /* partie securite */
+
+ .containerRight .padlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.containerRight .padlock h3 {
+    width: 70%;
+   font-size: 15px;
+   font-weight: bold;
+}
+
+.containerRight .padlock  h4 {
+    width: 70%;
+    font-size: 10px;
+ }
+    /* END partie securite */
+
+    /* google && apple */
+
+hr{
+    margin: auto;
+    width: 80%;
+}
+.leader{
+    display: flex;
+    justify-content: center;
+}
+.leader h4{
+    font-size: 12px;
+}
+
+.app{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.app img{
+ margin: 0 20px;
+}
+
+    /* END google && apple */
+/* END container right */
+
+.blockUl {
+    background-color: white;
+    height:fit-content;
+    width: 400px;
+    border-radius: 10px;
+}
+
+.Ul {
+    list-style: none;
+    padding: 0;
+}
+
+.Li {
+    width: 90%;
+    border: 1px solid grey;
+    margin: auto;
+    padding: 5px;
+    color: black;
+    
+    margin-top: 10px;
+}

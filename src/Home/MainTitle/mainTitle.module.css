@@ -1,0 +1,33 @@
+/* Title & paragraphe */
+.mainTitle{
+    margin-top: 4.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2.5rem;
+
+}
+
+.mainTitle h2{
+    font-family: Trebuchet MS;
+    font-size: 4rem;
+    line-height: 1.4;
+    letter-spacing: -0.0286rem;
+    color: white;
+    font-weight: bold;
+}
+
+.mainTitle h4{
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 1.143rem;
+    font-weight: bold;
+    line-height: 1.4;
+    color: #002620;
+    padding-top: 0.2856rem;
+}
+
+.mainTitle h4 a{
+    color: black;
+    text-decoration-line:underline;
+}
+/* END Title & paragraphe */
