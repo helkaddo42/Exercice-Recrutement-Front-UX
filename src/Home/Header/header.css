@@ -1,78 +1,64 @@
-.toolbar{
-    flex-wrap: wrap;
+.Navbar {
+    background-color: transparent;
+    width: 80%;
     margin: auto;
-    /* width: 70%; */
-    height: 80px;
-} 
-
-.titleHeader {
-display: flex;
-height: 100%;
-flex-direction: column;
-justify-content: flex-end;
 }
 
-.titleHeader h2{
+.Brand {
+    color:white;
     font-weight: bold;
-    color: white;
-    font-size: 2.5rem;
-    font-family: Trebuchet MS
+    margin:0;
 }
 
-.nav{
+.Link {
+    color:white;
+}
+
+.Img {
+    border: 2px solid white;
+    border-radius: 8px;
+}
+
+.Langue {
+    margin-left: 10px;
+    margin-bottom: 0;
+}
+
+.CreateAccount {
+    margin-top: 3px;
+    margin-right: 10px;
+    margin-bottom: 0;
+}
+
+.LinkAccount, .LinkLangue {
     display: flex;
-    align-items: center;
-    height: 100%;
-
-}
-
-.space{
-    flex-grow: 0.6;
-}
-
-.items{
-    display: flex;
-    /* flex-direction: column;
-    justify-content: flex-end ; */
-    height: 100%;
-}
-.items ul {
-    display: flex;
-    text-decoration: none;
-    list-style: none;
-    /* width: 100%; */
-}
-
-.items ul a {
-   font-weight: bold;
-   font-size: 1rem;
-   background-color: teal;
-   width: 300px;
+    flex-direction: row;
     color: white;
-    font-family: Open Sans,Helvetica,Arial,sans-serif;
-    padding: 15px 15px;
-    
 }
 
-.items ul img {
-    border: solid #FFFFFF 1px;
-    border-radius: 5px;
-    margin-right: 5px;
-     
- }
-
-.items a:hover, 
-.items a:active {
-    color: white;
-    cursor: pointer;
-    text-decoration: none;
-    transition: background-color .1s ease-out;
-    text-shadow: 0 0 2px rgba(0,0,0,0.5);
+@media(max-width: 1070px) {
+    .Navbar {
+        width: 85%;
+    }
 }
 
-.titleHeader a:hover,
-.titleHeader a:active{
-    cursor: pointer;
-    text-decoration: none;
+@media(max-width: 991px) {
+    .Navbar {
+        width: 100%;
+        background-color: white;
+    }
+    .Brand {
+        color: #00A88F;
+    }
+    .Link, .LinkAccount, .LinkLangue {
+        color: black;
+        text-align: center;
+    }
+    .LinkLangue, .LinkAccount {
+        justify-content: center;
+    }
+    .LinkAccount {
+        flex-direction: column;
+        justify-content: space-around;
+    }
 }
-

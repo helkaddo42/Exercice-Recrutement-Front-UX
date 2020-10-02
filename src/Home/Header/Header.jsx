@@ -1,35 +1,31 @@
-import React from 'react'
-import {NavLink} from 'react-router-dom';
-import flag from '../../Picture/flag.svg'
+import React from 'react';
+import { Navbar, Nav } from 'react-bootstrap';
+import flag from '../../Picture/flag.svg';
 import './header.css'
 
-function Header() {
-    return (
-        <header className='toolbar'>
-              <nav className='nav'>
-
-                    <div className='titleHeader'>
-                        <NavLink to="/Home"><h2>trainline</h2></NavLink>
-                    </div> 
-
-                    <div className='space'></div>
-
-                    <div className='items'>
-                        <ul>
-                            <li> <NavLink to='/'> <img src={flag} alt="flag"/> FR / EUR </NavLink> </li>
-                            <li><NavLink to='/'> Business </NavLink> </li> 
-                            <li> <NavLink to='/'>Aide</NavLink> </li>
-                            <li> <NavLink to='/'>Achat carte ou abonnement</NavLink> </li>
-                            <li> <NavLink to='/'>Créer un compte <button style={{fontWeight:'bold'}} className='btn btn-light btn-sm'> Se connecter </button> </NavLink> </li>
-                        </ul>
-                    </div>   
-
-                 </nav>
-                                
-
-
-        </header>
-    )
-}
+const Header = () => (
+    <Navbar expand="lg" className='Navbar'>
+        <Navbar.Brand href="#home"><h2 className='Brand'>trainline</h2></Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+        <Nav className="mr-auto" />
+            <Nav.Link href="#home">
+                <div className='LinkLangue'>
+                    <img src={flag}  className='Img' alt="flag"/>
+                    <p className='Langue'>FR / EUR</p>
+                </div>
+            </Nav.Link>
+            <Nav.Link href="#link" className='Link'>Business</Nav.Link>
+            <Nav.Link href="#link" className='Link'>Aide</Nav.Link>
+            <Nav.Link href="#link" className='Link'>Achat</Nav.Link>
+            <Nav.Link href="#link">
+                <div className='LinkAccount'>
+                    <p className='CreateAccount'>Créer un compte</p>
+                    <button style={{fontWeight:'bold'}} className='btn btn-light btn-sm'>Se connecter</button>
+                </div>
+            </Nav.Link>
+        </Navbar.Collapse>
+    </Navbar>
+)
 
 export default Header

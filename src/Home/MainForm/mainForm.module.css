@@ -2,9 +2,7 @@
 .mainForm{
     display: flex;
     justify-content: center;
-    margin: auto;
-    
-    height: 600px ;
+    height: 600px;
     margin-bottom: 2rem;
 }
 /* END mainForm */
@@ -14,28 +12,37 @@
 .formLeft{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    justify-content: space-around;
-    width:450px;
+    width:550px;
     background-color: white;
     border-radius: 0.9rem;
-    margin-right: 5%;
+    margin-right: 20px;
+    padding: 30px;
 }
 
-.formLeft .inputBox input{
-    width: 80%;
-    color: blue;
-    font-size: 20px;
-    font-weight: bold;
-    border: none;
-    background: transparent;
-    border-bottom: 1px solid blue;
-    outline: none;
-    cursor: pointer;
-    padding-top: 20px;
-}
+
 /* END form left */
 
+.blockInput {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+}
+
+.labelInput {
+    background-color: rgb(233, 233, 233);
+    width: 30%;
+    margin: 0;
+    padding: 20px;
+}
+.Input {
+    background-color: rgb(233, 233, 233);
+    width: 70%;
+    border: none;
+}
 
 /* container right */
 
@@ -43,7 +50,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 450px;
+    width: 470px;
     border-radius:  1rem;
     background-color: white;
 }
@@ -96,13 +103,11 @@
 .containerRight .loyalty h4 {
     width: 70%;
     font-size: 10px;
-    /* font-weight: bold; */
  }
-
     /*  END partie fidelite */
 
 
-    /* partie securite */
+    /* partie logo palock */
 
  .containerRight .padlock {
     display: flex;
@@ -121,7 +126,7 @@
     width: 70%;
     font-size: 10px;
  }
-    /* END partie securite */
+    /* END partie logo Padlock */
 
     /* google && apple */
 
@@ -147,9 +152,10 @@ hr{
  margin: 0 20px;
 }
 
-    /* END google && apple */
+ /* END google && apple */
 /* END container right */
 
+/* liste  */
 .blockUl {
     background-color: white;
     height:fit-content;
@@ -164,10 +170,68 @@ hr{
 
 .Li {
     width: 90%;
-    border: 1px solid grey;
+    background-color: rgb(233, 233, 233);
     margin: auto;
+    padding: 10px;
+    color: black;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.Li:hover {
+    background-color: rgba(128, 128, 128, 0.61);
+    color:white;
+}
+/* END list */
+
+/* list for form && to */
+
+.Ul_F_T {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.Li_F_T {
+    width: 90%;
+    background-color: rgb(174, 192, 176);
+    margin: auto;
+    margin-left: 5px;
     padding: 5px;
     color: black;
-    
-    margin-top: 10px;
+    margin-top: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+
 }
+
+.Li_F_T:hover {
+    background-color: rgba(16, 94, 219, 0.61);
+    color:white;
+}
+
+/* ENd  list for form && to*/
+
+@media(max-width: 991px) {
+    .mainForm {
+        flex-direction: column;
+        justify-content: inherit;
+    }
+
+    .formLeft {
+        width: 100%;
+    }
+
+    .containerRight {
+        display: none;
+    }
+
+    .Ul,
+    .UL_F_T  {
+        width: 100%;
+    }
+    .blockUl{
+        width: 100%;
+    }
+}
+

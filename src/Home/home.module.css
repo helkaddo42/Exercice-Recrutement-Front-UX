@@ -6,6 +6,11 @@
     height: 100vh;
     width: 100%;
 }
-/* END background image */
 
+@media(max-width: 991px) {
+    .home {
+        background-image: inherit;
+        background-color: white;
+    }
+}
 
