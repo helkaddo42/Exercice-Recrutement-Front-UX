@@ -157,7 +157,7 @@ hr{
 
 /* liste  */
 .blockUl {
-    background-color: white;
+    /* background-color: white; */
     height:fit-content;
     width: 400px;
     border-radius: 10px;
@@ -176,6 +176,7 @@ hr{
     color: black;
     margin-top: 10px;
     cursor: pointer;
+    border-radius: 10px;
 }
 
 .Li:hover {
