@@ -1,0 +1,15 @@
+.Info {
+    background-color:#E2F6F0;
+    height:56px; 
+    margin:auto;
+    text-align:center;
+    cursor:pointer;
+    color: grey;
+    text-decoration: none;
+}
+
+@media(max-width: 991px) {
+    .Info {
+        display: none;
+    }
+}

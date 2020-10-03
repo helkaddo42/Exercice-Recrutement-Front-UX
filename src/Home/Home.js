@@ -4,6 +4,8 @@ import MainTitle from '../Home/MainTitle/MainTitle'
 import MainForm from '../Home/MainForm/MainForm'
 import home from './home.module.css'
 import MyModal from './Modal/Modal'
+import TopAlertInfo from './TopAlertInfo/AlertInfo'
+
 
 const Home = () => {
 
@@ -22,6 +24,7 @@ const Home = () => {
     return(
         
         <div className={home.home}>
+            <TopAlertInfo />
             <Header />
             <MainTitle />
             <MyModal click={()=>setShowModal(false)} modal={showModal} />
